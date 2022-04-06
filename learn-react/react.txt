@@ -182,7 +182,7 @@ ReactDOM.render(
 
 
 JSX: syntax for writing javscript that is private for react
-w hye bteshbah html bas ger 3ana ...w ma byenhat fia style
+w hye bteshbah html bas ger 3ana ...
 
 
 ex: mafina nektob hik => <div style = "color: red"></div>          //HTML
@@ -199,3 +199,126 @@ import App from './App';//fina nekteba hik
 import App from './App.js'; //badal hik
 
 li2an react byetwa2a3 el file ykun .js
+
+===========================
+
+ <h2 style={{ color: "red" }}>Design is my life</h2> // he e5tisar la
+//object {color:"red"}
+or
+
+ document.querySelector('h1').style.color = "red";
+
+ =================================
+
+  <h2 style={
+    {
+       color: "red",
+       fontSize: "100px",
+       backgroundColor:"black"
+     }
+    }>Design is my life</h2>
+
+    ===============================
+    inline style css
+
+    function Header() {
+    return (
+        // jsx {javascript} jsx
+        <h2 style={
+            {
+                color: "red",
+                fontSize: "100px",
+                backgroundColor: "black"
+            }
+        }>Design is my life</h2>
+    );
+}
+
+=======================
+internal style css
+
+import React from 'react';
+
+
+function Header() {
+    const style = {
+        color: "red",
+        fontSize: "100px",
+        backgroundColor: "black"
+    }
+    return (
+        // jsx {javascript} jsx
+        <h2 style={style}>Design is my life</h2>
+    );
+}
+
+export default Header;
+=====================================================================
+
+yufadal nesta3mel external style deyman
+
+==========================
+<h1 className="bg-dark text-white" > Design is my life</h1 >
+
+mafi shi esmo class , fi shi esmo className
+
+li2an bel javscript hye btkun
+querySelector(").syle.className = "bg-dark"
+
+==============================
+
+className hye JSX
+
+
+===========
+
+
+import React from 'react';
+
+
+function Header() {
+    let title = "";
+
+    const client = "Designer";
+
+    if (client === "Designer") {
+        title = "Design is my life";
+    } else {
+        title = "Programming is my life";
+    }
+
+
+    return (
+        // jsx {javascript} jsx
+        <div className="navbar bg-primary">
+            <h1 className="text-white">{title}</h1>
+        </div>
+    );
+}
+
+export default Header; 
+
+================
+
+import React from 'react';
+
+
+function Header() {
+    const client = "Designer";
+    const title_designer = "Design ";
+    const title_programmer = "Programming ";
+
+    return (
+        // jsx {javascript} jsx
+        <div className="navbar bg-primary">
+            <h1 className="text-white">
+                {client === "Designer" ? title_designer : title_programmer}
+                is my life.
+            </h1>
+        </div>
+    );
+}
+
+export default Header; 
+========================================
+
