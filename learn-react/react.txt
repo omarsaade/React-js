@@ -1,0 +1,201 @@
+React is not a backend
+hye frontend w ma 5assa bel server
+Dom hye saf7et el browser nafsha(chrome,mozilla)
+
+- React bta3mul virtual Dom bi 3allej el data w baada byetfe3al ma3 el Dom
+el asesi..la hik esmo " react "
+
+Components:mukawiinat
+
+Npm is a tool that use to install packages.
+Npx is a tool that use to execute packages.
+
+//IZA BADAK MORE I5TISARAT BEL VSCODE
+fiLE -> PREFERENCES -> KEYBOARD SHORTCUT
+
+// LA TEFTAH TERMInal barra el vscode iza badak
+WINDOWS r => KTOB CMD
+
+check node version
+node -v
+
+check npm version
+npm -v
+
+iza badak teshtegel react lezem tkun mnazal ----------NODEJS-------   ...(((((li2an huwe bye7we 3al npm awel npx w .....))))
+t2akad el npm ykun fo2 el version 5 mishen ykun mawjud el npx
+
+check npx version
+npx -v
+
+
+
+=======================================
+-------------------------------
+======================================
+https://github.com/facebook/create-react-app
+
+Now we will create a project from 0
+=
+==
+===
+====
+1-  npx create-react-app learn-react 
+2- cd learn-react
+3- npm start
+
+
+-----------------------
+4-Installed file analysis:
+
+render => rajja3 ,2adamlak
+
+index.html : aham shi fia ///<div id="root"></div>// li2an byen3amal fia render
+
+bi aleb maktabet reatdom fi function esma .render()
+
+The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
+The purpose of the function is to display the specified HTML code inside the specified HTML element.
+But render where?
+
+--render has been replaced with createRoot in React 18. See createRoot for more info.
+ Render a React element into the DOM in the supplied container
+ and return a reference to the component (or returns null for stateless components).
+
+
+ ------------------
+ What does class app extends component mean?
+This Component refers to a specific class implementation maintained by react 
+.Extending Component will give you access to functions like componentDidMount ,
+ componentDidUpdate , componentWillUnmount and render .Oct 1, 2018
+
+
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+ functional component:::
+
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+    function App() {
+      return (
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>
+              Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <a
+              className="App-link"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
+          </header>
+        </div>
+      );
+    }
+
+export default App;
+
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+class component::::
+
+import React, { Component } from 'react'; //different
+import logo from './logo.svg';
+import './App.css';
+
+    class App extends Component { //different
+      render() ( //different
+        // The rest of the file is the same
+        <div className="App"> 
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>
+              Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <a
+              className="App-link"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
+          </header>
+        </div>
+      );
+    }
+
+    export default App;
+    ============================================
+
+There are basically 
+two ways of writing components in React: functional and class components.
+The given examples are no different except for this aspect.
+
+===============
+
+
+ function App() {
+   return (
+    <h1>hello</h1>
+   );
+ }
+
+
+or 
+
+
+class App extends Component {
+  render(){
+    return (
+      <h1>hello</h1>
+    );
+  }
+}
+
+======================================================
+
+render()
+hayde method ma25ude men maktabet Dom w hye bte5od 2 parameter
+
+===> ReactDOM.render(what,where);
+
+ReactDOM.render(
+    JSX:
+    <div>
+       <h2>hello</h2>
+       <ul>
+        <li>facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+    </div>
+
+, document.getElementById('root'));
+
+
+JSX: syntax for writing javscript that is private for react
+w hye bteshbah html bas ger 3ana ...w ma byenhat fia style
+
+
+ex: mafina nektob hik => <div style = "color: red"></div>          //HTML
+JSX:                     <div style = {{color: "red"}}></div>      //JSX
+
+
+syntax jsx hye bteje men library react li enta 3ammela import fo2
+import React from 'react';//haydeeeeeeeeeeeeeeeeeee
+import ReactDOM , { render } from 'react-dom';
+
+----------------------
+import App from './App';//fina nekteba hik 
+=
+import App from './App.js'; //badal hik
+
+li2an react byetwa2a3 el file ykun .js
