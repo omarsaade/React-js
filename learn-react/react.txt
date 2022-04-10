@@ -181,6 +181,9 @@ ReactDOM.render(
 , document.getElementById('root'));
 
 
+JSX stands for JavaScript XML. JSX allows us to write HTML in React.
+ JSX makes it easier to write and add HTML in React.
+
 JSX: syntax for writing javscript that is private for react
 w hye bteshbah html bas ger 3ana ...
 
@@ -202,7 +205,7 @@ li2an react byetwa2a3 el file ykun .js
 
 ===========================
 
- <h2 style={{ color: "red" }}>Design is my life</h2> // he e5tisar la
+ <h1 style={{ color: "red" }}>Design is my life</h1> // he e5tisar la
 //object {color:"red"}
 or
 
@@ -258,12 +261,12 @@ export default Header;
 yufadal nesta3mel external style deyman
 
 ==========================
-<h1 className="bg-dark text-white" > Design is my life</h1 >
+<h1 className="bg-dark text-white" > Design is my life</h1>
 
 mafi shi esmo class , fi shi esmo className
 
 li2an bel javscript hye btkun
-querySelector(").syle.className = "bg-dark"
+querySelector("").syle.className = "bg-dark"
 
 ==============================
 
@@ -321,4 +324,79 @@ function Header() {
 
 export default Header; 
 ========================================
+
+props:
+
+hala2 ana mabade karrer el li jawa el ul 500 marra w kell marra
+e23od het fia values m3ayanin..so shu el hal?
+el hal huwe ano e5la2 function fia li tag w mare2le el prop
+ka parameter w hawde el parameter bjibon mene el properties
+li bel social media kell wahde.
+w btezbat ma3na ..he ahaymeyr el properties bel rect w hye tab3an betsahel 
+ktir umur 3lek
+
+Social.js
+
+import React from 'react';
+import SocialItem from './SocialItem';
+
+
+
+
+
+// https://picsum.photos/
+
+function Social() {
+    return (
+        <ul className='list-group'>
+            <SocialItem
+                media='Facebook'
+                id='facebook'
+                img='https://picsum.photos/60'
+            />
+            {/* second */}
+            <SocialItem
+                media='Youtube'
+                id='youtube'
+                img='https://picsum.photos/61'
+            />
+            <SocialItem
+                media='Instagram'
+                id='instagram'
+                img='https://picsum.photos/62'
+            />
+            <SocialItem
+                media='LinkedIn'
+                id='LinkedIn'
+                img='https://picsum.photos/64'
+            />
+        </ul>
+    );
+}
+
+export default Social;
+
+------- and ---------------------
+SocialItem.js:
+
+
+import React from "react"
+
+
+function SocialItem(props) {
+    return (
+        <li className='list-group-item'>
+            <img src={props.img} alt={`Icon of ${props.media}`} />
+            <input type="checkbox" id={props.id} />
+            <label htmlFor={props.id}>{props.media}</label>
+        </li>
+    )
+
+}
+
+export default SocialItem 
+
+=================================================
+=======================================
+now with JSON
 

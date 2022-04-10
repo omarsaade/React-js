@@ -1,30 +1,24 @@
 import React from 'react';
 
+
 function Text() {
+    // const a = "web";
+    // if (a == "web") {
+    //     var str = document.querySelector("p").innerHTML;
+    //     var res = str.replace("web", "<span style='color:red'>web</span>");
+    //     document.querySelector("p").innerHTML = res;
+    // } else {
+    //     var str = document.querySelector("p").innerHTML;
+    //     var res = str.replace("Graphic", "<span style='color:red'>Grahpic</span>");
+    //     document.querySelector("p").innerHTML = res;
+    // }
+
     return (
-        // <p>Grapic and web design are far more than a job</p>
-        // <div>
-        //     <form className='form-check '>
-        //         <label>
-        //             <input type="checkbox" name="name" />
-        //             Facebook
-        //         </label><br></br>
-        //         <label>
-        //             <input type="checkbox" name="name" />
-        //             Youtube
-        //         </label><br></br>
-        //         <label>
-        //             <input type="checkbox" name="name" />
-        //             Instagram
-        //         </label><br></br>
-        //         <input type="submit" value="Submit" />
-        //     </form>
-        // </div>
-        <p>Graphic and web design are far more than a job for me.Thanks to my extensive
-            technical knowledge , I can implement my creative ideas very well,so that I can
-            offer tailor-made solutions for customers.
+        <p>
+            Graphic and web design
         </p>
     );
 }
 
 export default Text;
+
