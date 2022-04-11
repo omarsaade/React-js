@@ -1,35 +1,111 @@
-import React, { Component } from "react";
+//Event
+import React, { Component } from 'react';
 
 
 class App extends Component {
-
-
-
-    //meth1
     constructor() {
-        super()
-        this.state = { answer: 'Yes' }
+        super();
+        //object
+        this.state = {
+            number: 0
+        }
+        //imp!
+        this.clickHandler = this.clickHandler.bind(this);
     }
 
 
 
 
-    //meth2
+
+    //Note:aya method bet3arfa hon ben constructor and render
+    //lezem tenrabattttttt bel constructorrrrrrrrrrrr
+    clickHandler() {
+        this.setState(prevState => {
+            return { number: prevState.number + 1 }
+        })
+    }
+
+
+
+
+
+
     render() {
         return (
             <div>
-                <h1>Do you love me{this.state.answer}</h1>
+                <h1>{this.state.number}</h1>
+                <button onClick={this.clickHandler}>Click Me!</button>
             </div>
         )
     }
+
+
 }
 
 
+export default App
 
 
 
 
-export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { Component } from "react";
+
+
+// class App extends Component {
+
+
+
+//     //meth1
+//     constructor() {
+//         super()
+//         this.state = { answer: 'Yes' }
+//     }
+
+
+
+
+//     //meth2
+//     render() {
+//         return (
+//             <div>
+//                 <h1>Do you love me{this.state.answer}</h1>
+//             </div>
+//         )
+//     }
+// }
+
+
+
+
+
+
+// export default App;
 
 
 

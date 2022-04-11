@@ -631,7 +631,16 @@ class App extends Component {
 
 ==============================================================
 
+state hye 3ibara 3an object w heda el object bi albo 5bar 
+m3ayane
 
+this.state = {
+    number: 0
+}
+
+setState hye method men react library
+
+============================
 
 
 

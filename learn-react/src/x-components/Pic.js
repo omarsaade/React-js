@@ -7,6 +7,7 @@ import Info from './Info';
 
 
 class Pic extends Component {
+    //kell shi yuktab tahet el class mubashar
     constructor() {
         super()
         this.state = { Info: Info }
@@ -54,7 +55,7 @@ class Pic extends Component {
 
     }
 
-
+    //function
     mapping(x) {
         const members = x.map(member => <Pictures
             key={member.id}
