@@ -447,3 +447,210 @@ function Pic() {
 export default Pic;
 
 ========================
+import React from 'react';
+
+
+
+function Pictures(props) {
+    return (
+        <div className='col-md-4 col-sm-6'>
+            <div className="card">
+                <div className="card-header">
+                    <img style={{ maxWidth: '100%' }} src={props.p.img} alt={`Icon of `} />
+                </div>
+                <div className='card-body'
+                    style={{ backgroundColor: props.p.website ? 'white' : 'red' }}>
+                    <p>{props.p.name}</p>
+                    <p>{props.p.work}</p>
+                    <p>{props.p.phone}</p>
+                    <p> {props.p.email ? "" : 'there is no email'}
+                        {props.p.email}</p>
+                    <p>{props.p.website}</p>
+                </div>
+            </div>
+
+        </div>
+    );
+}
+
+export default Pictures;
+
+================================================
+=============================================================
+
+import React, { Component } from "react";
+import File from "./File";
+
+
+class App extends Component {
+    render() {
+      ////methodddddddddddd
+        return (
+            <div>
+
+
+                <File />
+                <File />
+            </div>
+        )
+    }
+}
+
+
+
+
+
+
+export default App;
+==================================================
+import React, { Component } from "react";
+
+
+class File extends Component {
+    method() {
+        return <h1>saade</h1>
+    }
+    render() {
+        const name = "omar"
+        const name1 = this.method();
+        return (
+            <h1>{name}{name1}</h1>
+        )
+    }
+}
+
+
+export default File;
+============================================================
+
+import React, { Component } from "react";
+
+
+class File extends Component {
+    //method
+    method(name2) {
+        return <h1>{name2}</h1>
+    }
+    render() {
+        const name = "omar"
+        const name2 = this.method("saade");
+        return (
+            <h1>{name}{name2}</h1>
+        )
+    }
+}
+
+
+export default File;
+
+=========================================================
+1
+methhhh:without assign a prop parameter
+
+
+import React, { Component } from "react";
+
+
+class File extends Component {
+    render() {
+        return (
+            <h1>{this.props.name}{this.props.name2}</h1>
+        )
+    }
+}
+
+
+export default File;
+
+======================================
+2
+
+
+import React, { Component } from "react";
+
+
+class App extends Component {
+    render() {
+        return (
+            <div>
+               <File name="ali" name2="samad" />
+                <File name="aly" name2="samadi" />
+                <File name="alo" name2="samado" /> 
+            </div>
+        )
+    }
+}
+
+
+export default App;
+
+==================================
+
+
+
+
+
+
+
+
+
+difference between props and state:
+//////==================///////////
+
+props:
+
+class File extends Component {
+    render() {
+        return (
+            <h1>{this.props.name}{this.props.name2}</h1>
+        )
+    }
+}
+
+===================================
+
+state:
+
+
+class App extends Component {
+
+    constructor() {
+        super()
+        this.state = { answer: 'Yes' }
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>Do you love me{this.state.answer}</h1>
+            </div>
+        )
+    }
+}
+
+
+==============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
