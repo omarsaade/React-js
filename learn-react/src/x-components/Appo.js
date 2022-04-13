@@ -5,7 +5,7 @@ class Appo extends Component {
 
   render() {
     return (
-      <div>Helloo</div>
+      <div>Hellooo</div>
     )
 
 
