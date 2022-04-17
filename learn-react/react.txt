@@ -1,3 +1,34 @@
+control space == jawa {}
+=======================================
+named export metel:
+
+export function do() {}
+
+he byen3amala import bi kaswen
+
+import {do} from './DO.js";
+
+--------------------------------------
+
+default export el ra2ise ..bye3namalo import 3ade bidun curly braces
+
+example:
+
+import do from "./Do.js";
+
+=======================================
+
+el class hye object
+
+
+
+
+
+
+
+
+
+
 React is not a backend
 hye frontend w ma 5assa bel server
 Dom hye saf7et el browser nafsha(chrome,mozilla)

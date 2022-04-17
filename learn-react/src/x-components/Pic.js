@@ -25,6 +25,7 @@ class Pic extends Component {
 
 
     // clickEvent() {
+
     //     console.log(Info);
     //     // newArray.push(..);
     // }
